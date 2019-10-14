@@ -64,9 +64,13 @@
     padding: 20px;
   }
   
-  .proflie {
+  .profile {
     width: 200px;
     border-radius:50%;
+  }
+
+  .profile-div {
+      width: fit-content;
   }
   
   .text-me {
@@ -90,6 +94,7 @@
   .logo-main {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
   }
   
   .logo-uni {
@@ -169,4 +174,38 @@
   #contact {
     background-color: #000000;
     color: white;
+  }
+
+  @media (max-width: 768px) { 
+    .about-me {
+        display: block;
+      }
+  
+    .logo-uni {
+      width: 120px;
+      padding-top: 20px;
+    }
+  
+    .profile-div {
+      margin: auto;
+    }
+    
+    .topic hr {
+      display: none;
+    } 
+    
+    .navBar li {
+      font-size: 0.7em;
+    }
+    
+    .edu-time {
+      padding: 9px;
+      border: 3px solid #888;
+      font-size: 1em;
+    }
+  
+    .edu-li {
+      margin-top: 10px;
+    }
+  
   }
