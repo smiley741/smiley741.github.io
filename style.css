@@ -1,211 +1,266 @@
 @font-face{
-    font-family:Gotham;
-    src: url(./assets/Gotham_Medium_Regular.ttf)
-  }
-  body {
-    font-family: Gotham;
-    background: black;
-  }
-  
-  ul {
-    margin: 0;
-  }
-  
-  h1 {
-    color: white;
-    font-size: 30px;
-  }
-  
-  h2 {
-    color: white;
-  }
-  
-  
-  .navBar {
-    padding:9px;
-    border: 1px solid #888;
-    display: flex;
-  }
-  
-  .navBar li {
-    flex: 1;
-    list-style: none;
-    text-align:center;
-    border-right: 1px solid #888;
-  }
-  
-  .navBar li:last-child {
-    border: 0;
-  }
-  
-  .topic-text {
-    padding: 9px;
-    border: 5px solid #f2f2f2;
-    flex: 1;
-    text-align:center;
-    text-transform: uppercase;
-  }
-  
-  .topic {
-    display: flex;
-    align-items: center;  
-  }
-  
-  .topic hr {
-    margin-left: 20px;
-    width: 100%;
-    height: 5px;
-    flex: 7;
-    background-color: #f2f2f2;
-  }
-  
+  font-family:Gotham;
+  src: url(./assets/Gotham_Medium_Regular.ttf)
+}
+
+body {
+  font-family: Gotham;
+  background: black;
+  font-size: 1em;
+}
+
+ul {
+  margin: 0;
+}
+
+.namechanger {
+  background: transparent;
+  margin-bottom : 10px;
+  font-size: 2em;
+  color: white;
+}
+
+.nameButton {
+  background:transparent;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+}
+
+h2 {
+  color: white;
+}
+
+
+.navBar {
+  padding:9px;
+  border: 1px solid #888;
+  display: flex;
+}
+
+.navBar li {
+  flex: 1;
+  list-style: none;
+  text-align:center;
+  border-right: 1px solid #888;
+}
+
+.navBar li:last-child {
+  border: 0;
+}
+
+.topic-text {
+  padding: 9px;
+  border: 5px solid #f2f2f2;
+  flex: 1;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.topic {
+  display: flex;
+  align-items: center;  
+}
+
+.topic hr {
+  margin-left: 20px;
+  width: 100%;
+  height: 5px;
+  flex: 7;
+  background-color: #f2f2f2;
+}
+
+.about-me {
+  display: flex;
+  padding: 20px;
+}
+
+.proflie {
+  width: 200px;
+  border-radius:50%;
+}
+
+.profile-div {
+  width: fit-content;
+}
+
+.text-me {
+  padding: 20px;
+}
+
+.space {
+  padding-top:25px;
+}
+
+.edu-li {
+  display: flex;
+}
+
+.edu-time {
+  padding: 9px;
+  border: 3px solid #888;
+  width: fit-content;
+}
+
+.logo-main {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-uni {
+  width: 200px;
+}
+
+a {
+  text-decoration: #d9d9d9;
+}
+a:hover {
+  color: white !important;
+}
+a:visited {
+  color: #d9d9d9;
+}
+
+.pb {
+  width:100%;
+  position: relative;
+  height:30px;
+}
+
+.pb .pb-bg {
+  width:100%;
+  margin: auto;
+  height: 30px;
+  background-color:#ddd;
+  position:absolute;
+}
+
+.pb .pb-cr {
+  width: 1%;
+  margin: auto;
+  height: 30px;
+  background-color:#ff704d;
+  position:absolute;
+  transition: 1s;
+}
+
+.pb .box-input {
+  text-align: center;
+  position: absolute;
+  left:0px;
+  right:0px;
+  margin:auto;
+  top:5px;
+}
+
+.pb .box-input input {
+  text-align: center;
+}
+
+.pb-all {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#name {
+  color: white;
+}
+
+#navbar {
+}
+
+#about-me {
+  color: white;
+}
+
+#edu {
+  color: white;
+}
+
+#skills {
+  color: white;
+}
+
+#contact {
+  color: white;
+}
+
+#skillButt {
+  margin: 10px;
+  color:white;
+  background: transparent;
+  text-align: center;
+}
+
+.addskillbutt {
+  background: transparent;
+  color: white;
+  text-align: center;
+}
+
+.CRB {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: 1px solid white;
+  margin: 2px;
+}
+
+.positioncr {
+  position: fixed;
+  right: 10px;
+}
+
+#color1 {
+  background: #000000;
+}
+
+#color2 {
+  background: #2E2E2E;
+}
+
+#color3 {
+  background: #424242;
+}
+
+#color4 {
+  background: #585858;
+}
+
+
+@media (max-width: 768px) { 
   .about-me {
-    display: flex;
-    padding: 20px;
-  }
-  
-  .profile {
-    width: 200px;
-    border-radius:50%;
+      display: block;
+    }
+
+  .logo-uni {
+    width: 120px;
+    padding-top: 20px;
   }
 
   .profile-div {
-      width: fit-content;
+    margin: auto;
   }
   
-  .text-me {
-    padding: 20px;
-  }
+  .topic hr {
+    display: none;
+  } 
   
-  .space {
-    padding-top:25px;
-  }
-  
-  .edu-li {
-    display: flex;
+  .navBar li {
+    font-size: 0.7em;
   }
   
   .edu-time {
     padding: 9px;
     border: 3px solid #888;
-    width: fit-content;
-  }
-  
-  .logo-main {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-  }
-  
-  .logo-uni {
-    width: 200px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #d9d9d9;
-  }
-  a:hover {
-    color: White !important;
-  }
-  a:visited {
-    color: #d9d9d9;
-  }
-  
-  .pb {
-    width:100%;
-    position: relative;
-    height:30px;
-  }
-  
-  .pb .pb-bg {
-    width:100%;
-    margin: auto;
-    height: 30px;
-    background-color:#ddd;
-    position:absolute;
-  }
-  
-  .pb .pb-cr {
-    width: 90%;
-    margin: auto;
-    height: 30px;
-    background-color:#ff704d;
-    position:absolute;
-  }
-  
-  .pb .box-input {
-    text-align: center;
-    position: absolute;
-    left:0px;
-    right:0px;
-    margin:auto;
-    top:5px;
-  }
-  
-  .pb-all {
-    padding-bottom: 10px;
-  }
-  
-  #name {
-    background-color: #000000;
-    color: white;
-  }
-  
-  #navbar {
-    background-color: #000000;
-  }
-  
-  #about-me {
-    background-color: #000000;
-    color: white;
-  }
-  
-  #edu {
-    background-color: #000000;
-    color: white;
-  }
-  
-  #skills {
-    background-color: #000000;
-    color: white;
-  }
-  
-  #contact {
-    background-color: #000000;
-    color: white;
+    font-size: 1em;
   }
 
-  @media (max-width: 768px) { 
-    .about-me {
-        display: block;
-      }
-  
-    .logo-uni {
-      width: 120px;
-      padding-top: 20px;
-    }
-  
-    .profile-div {
-      margin: auto;
-    }
-    
-    .topic hr {
-      display: none;
-    } 
-    
-    .navBar li {
-      font-size: 0.7em;
-    }
-    
-    .edu-time {
-      padding: 9px;
-      border: 3px solid #888;
-      font-size: 1em;
-    }
-  
-    .edu-li {
-      margin-top: 10px;
-    }
-  
+  .edu-li {
+    margin-top: 10px;
   }
+
+}

@@ -12,9 +12,20 @@
   </head>  
   <body>
     
+    <div class="positioncr">
+      <div onclick="BGC('#000000')" class="CRB" id="color1"></div>
+      <div onclick="BGC('#2E2E2E')" class="CRB" id="color2"></div>
+      <div onclick="BGC('#424242')" class="CRB" id="color3"></div>
+      <div onclick="BGC('#585858')" class="CRB" id="color4"></div>
+    </div>
+    
     <!-- Name -->
     <div id="name" class="space">
-      <div><h1>Nattanon Wanitshayapaisit</h1></div>
+      <div>
+        <h1 id="realname">Nattanon Wanitshayapaisit</h1>
+        <input id="nameCID" class="namechanger" type="text" placeholder="Change name here...">
+        <button class="nameButton" onclick="clickChange()">Edit Name</button>
+      </div>
       <div>AceMile</div>
     </div>
     
@@ -94,24 +105,36 @@
           <li>Finance</li>
         </ul>
       </div>
-      
-      
+
+      <div>
+        <input class="skillinput" type="text" id="skillButt" placeholder="add skill">
+        <button class="addskillbutt" onclick="clickclickboom()">Add skill</button>
+      </div>
+       <ul id="ulId">
+        
+          
+      </ul> 
+
       <div class="pb-all">
         <div class="pb">
           <div class="pb-bg"></div>
-          <div class="pb-cr"></div>
-          <input class="box-input" type="text" value="70">  
+          <div id="pb-cr-html" class="pb-cr"></div>
+          <div class="box-input">
+            <input min="0" max="100" type="number" id="pb-html" value="0" onchange="doit('pb-html', 'pb-cr-html')">    
+          </div>
         </div>
         <div style="text-align: center;">
           HTML
         </div>
       </div>
-      
+
       <div class="pb-all">
         <div class="pb">
           <div class="pb-bg"></div>
-          <div class="pb-cr"></div>
-          <input class="box-input" type="text" value="60">  
+          <div id= "pb-cr-css" class="pb-cr"></div>
+          <div class="box-input">
+            <input min="0" max="100" type="number" id="pb-css" value="0" onchange="doit('pb-css','pb-cr-css')">
+          </div>
         </div>
         <div style="text-align: center;">
           CSS
@@ -121,8 +144,11 @@
       <div class="pb-all">
         <div class="pb">
           <div class="pb-bg"></div>
-          <div class="pb-cr"></div>
-          <input class="box-input" type="text" value="30">  
+          <div id="pb-cr-js" class="pb-cr"></div>
+          <div class="box-input">
+            <input min="0" max="100" type="number" id="pb-js" value="0" onchange="doit('pb-js','pb-cr-js')">
+          </div>
+            
         </div>
         <div style="text-align: center;">
           JS
